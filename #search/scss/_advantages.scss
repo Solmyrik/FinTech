@@ -1,0 +1,121 @@
+.advantages {
+  &__container {
+  }
+
+  &__title {
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 64px;
+    margin-bottom: 140px;
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 100px;
+    }
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 64px;
+    }
+  }
+
+  &__item {
+    @media (max-width: $mobile) {
+      &:nth-child(2) {
+        order: 1;
+      }
+      &:nth-child(3) {
+        order: 2;
+      }
+      &:nth-child(1) {
+        order: 3;
+      }
+      &:nth-child(4) {
+        order: 4;
+      }
+    }
+  }
+
+  &__icon {
+    margin-bottom: 34px;
+    @media (max-width: $mobile) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-family: $medium;
+    @media (max-width: $mobile) {
+      font-size: 18px;
+    }
+  }
+
+  &__text {
+    line-height: 150%;
+    @media (max-width: $mobile) {
+      font-size: 14px;
+    }
+  }
+
+  &__bottom {
+    max-width: 825px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    @media (max-width: $tablet) {
+      gap: 60px;
+    }
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+
+  &__image {
+    img {
+      width: 278px;
+    }
+  }
+
+  &__content {
+  }
+
+  &__content-title {
+    font-size: 32px;
+    font-family: $bold;
+    font-weight: 600;
+    line-height: 115%;
+    margin-bottom: 40px;
+    @media (max-width: $mobile) {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__button {
+    margin-top: 40px;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 5px 20px;
+    width: 219px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2aabee;
+    color: #ffffff;
+    gap: 10px;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 0.75;
+    }
+    @media (max-width: $mobile) {
+      margin-top: 20px;
+    }
+  }
+}
