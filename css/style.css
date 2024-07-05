@@ -52,6 +52,12 @@
           justify-content: center;
 }
 
+._btn._big-btn {
+  padding: 23px 44px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
 ._btn:hover {
   background-color: #856952;
 }
@@ -214,12 +220,6 @@ body.lock {
   max-width: 1330px;
   margin: 0 auto;
   padding: 0px 15px;
-}
-
-@media (max-width: 767px) {
-  [class*="__container"] {
-    padding: 0px 10px;
-  }
 }
 
 .header__container {
@@ -650,11 +650,113 @@ body.lock {
   }
 }
 
+@media (max-width: 767px) {
+  .rates__container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .rates__title {
+    padding: 0px 15px;
+  }
+}
+
+.rates__subtitle {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .rates__subtitle {
+    margin-bottom: 20px;
+    padding: 0px 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .rates__bottom {
+    padding: 0px 15px;
+  }
+  .rates__bottom .rates__subtitle {
+    padding: 0;
+  }
+}
+
+.rates__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 992px) {
+  .rates__items {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .rates__items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+}
+
+.rates__item {
+  height: 200px;
+  padding: 32px;
+  border-radius: 12px;
+  background-color: #f7f6f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .rates__item {
+    height: 160px;
+    padding: 16px;
+  }
+}
+
+.rates__header {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.rates__value {
+  font-size: 28px;
+  line-height: 120%;
+  font-family: "Suisse-med";
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+  .rates__value {
+    font-size: 20px;
+  }
+}
+
+.rates .currency-table {
+  margin-bottom: 60px;
+}
+
 .currency-table {
   width: 100%;
-  margin: 50px auto;
   border-collapse: collapse;
-  background-color: #ffffff;
   border-radius: 12px;
 }
 
@@ -664,10 +766,51 @@ body.lock {
   text-align: left;
 }
 
+@media (max-width: 992px) {
+  .currency-table th,
+  .currency-table td {
+    font-size: 14px;
+    padding: 16px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .currency-table th,
+  .currency-table td {
+    padding: 20px 0px 20px 16px;
+  }
+}
+
+.currency-table td {
+  padding: 27px 64px;
+}
+
+@media (max-width: 992px) {
+  .currency-table td {
+    font-size: 14px;
+    padding: 16px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .currency-table td {
+    padding: 20px 0px 20px 16px;
+  }
+  .currency-table td span {
+    display: none;
+  }
+}
+
 .currency-table th {
   background-color: #edecea;
   font-weight: 400;
   font-size: 24px;
+}
+
+@media (max-width: 992px) {
+  .currency-table th {
+    font-size: 14px;
+  }
 }
 
 .currency-table th:first-child {
@@ -682,8 +825,20 @@ body.lock {
   border-radius: 0 0 12px 0;
 }
 
+@media (max-width: 767px) {
+  .currency-table tr:last-child td:last-child {
+    border-radius: 0;
+  }
+}
+
 .currency-table tr:last-child td:first-child {
   border-radius: 0 0 0 12px;
+}
+
+@media (max-width: 767px) {
+  .currency-table tr:last-child td:first-child {
+    border-radius: 0;
+  }
 }
 
 .currency-table td {

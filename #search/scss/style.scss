@@ -41,9 +41,6 @@ body {
   max-width: $pc;
   margin: 0 auto;
   padding: 0px 15px;
-  @media (max-width: $mobile) {
-    padding: 0px 10px;
-  }
 }
 
 @import "_header";

@@ -1,8 +1,92 @@
+.rates {
+  &__container {
+    @media (max-width: $mobile) {
+      padding: 0;
+    }
+  }
+  &__bottom {
+  }
+  &__title {
+    @media (max-width: $mobile) {
+      padding: 0px 15px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 30px;
+    @media (max-width: $mobile) {
+      margin-bottom: 20px;
+      padding: 0px 15px;
+    }
+  }
+
+  &__bottom {
+    @media (max-width: $mobile) {
+      padding: 0px 15px;
+      .rates__subtitle {
+        padding: 0;
+      }
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    grid-template-rows: 1fr;
+    margin-bottom: 60px;
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(3, 1fr);
+      // grid-template-rows: 2fr;
+    }
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__item {
+    height: 200px;
+    padding: 32px;
+    border-radius: 12px;
+    background-color: $light;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $mobile) {
+      height: 160px;
+      padding: 16px;
+    }
+  }
+
+  &__header {
+    flex: 1 1 auto;
+  }
+
+  &__value {
+    font-size: 28px;
+    line-height: 120%;
+    font-family: $medium;
+    font-weight: 500;
+    margin-bottom: 8px;
+    @media (max-width: $mobile) {
+      font-size: 20px;
+    }
+  }
+
+  &__currency {
+  }
+
+  &__volume {
+  }
+  .currency-table {
+    margin-bottom: 60px;
+  }
+}
+
 .currency-table {
   width: 100%;
-  margin: 50px auto;
   border-collapse: collapse;
-  background-color: #ffffff;
+
   border-radius: 12px;
   //   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -12,12 +96,36 @@
   //   border: 1px solid #ddd;
   padding: 40px 64px;
   text-align: left;
+  @media (max-width: $tablet) {
+    font-size: 14px;
+    padding: 16px 20px;
+  }
+  @media (max-width: $mobile) {
+    padding: 20px 0px 20px 16px;
+  }
+}
+
+.currency-table td {
+  padding: 27px 64px;
+  @media (max-width: $tablet) {
+    font-size: 14px;
+    padding: 16px 20px;
+  }
+  @media (max-width: $mobile) {
+    padding: 20px 0px 20px 16px;
+    span {
+      display: none;
+    }
+  }
 }
 
 .currency-table th {
   background-color: $darklight;
   font-weight: 400;
   font-size: 24px;
+  @media (max-width: $tablet) {
+    font-size: 14px;
+  }
 }
 .currency-table th:first-child {
   border-radius: 12px 0 0 0;
@@ -27,9 +135,15 @@
 }
 .currency-table tr:last-child td:last-child {
   border-radius: 0 0 12px 0;
+  @media (max-width: $mobile) {
+    border-radius: 0;
+  }
 }
 .currency-table tr:last-child td:first-child {
   border-radius: 0 0 0 12px;
+  @media (max-width: $mobile) {
+    border-radius: 0;
+  }
 }
 .currency-table td {
   background-color: $light;

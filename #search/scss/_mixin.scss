@@ -68,6 +68,11 @@ $bold: "Suisse-bold";
   display: flex;
   align-items: center;
   justify-content: center;
+  &._big-btn {
+    padding: 23px 44px;
+    margin: 0 auto;
+    font-size: 16px;
+  }
   &:hover {
     background-color: #856952;
   }
