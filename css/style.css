@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .ibg {
   background-position: center;
   background-size: cover;
@@ -843,4 +844,133 @@ body.lock {
 
 .currency-table td {
   background-color: #f7f6f4;
+}
+
+.level__title {
+  max-width: 880px;
+}
+
+.level__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.level__item {
+  border-radius: 12px;
+  padding: 32px 64px;
+  width: 530px;
+  max-width: 530px;
+  height: 600px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.level__item_purple {
+  background: radial-gradient(154.17% 102.78% at 26.07% -12.47%, #e1d5eb 0%, #d0c3eb 86.0%, #cdc0eb 100%);
+}
+
+.level__item_purple .level__label {
+  background: rgba(245, 247, 250, 0.2);
+}
+
+.level__item_green {
+  background: radial-gradient(130.78% 87.18% at 8.62% 4.12%, #b2eac2 0%, #c5f4d5 50%, #bbedd2 99.0%, #b9ebd0 100%);
+}
+
+.level__item_green .level__label {
+  background: rgba(245, 247, 250, 0.2);
+}
+
+.level__item_blue {
+  background: radial-gradient(130.78% 87.18% at 8.62% 4.12%, #b6d7ff 0%, #b3d3ff 50%, #aac7ff 99.0%, #aac7ff 100%);
+}
+
+.level__item_blue .level__label {
+  background: rgba(245, 247, 250, 0.2);
+}
+
+@media (max-width: 992px) {
+  .level__item {
+    width: 320px;
+    height: 490px;
+  }
+}
+
+.level__label {
+  border-radius: 6px;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.level__name {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+  font-family: "Suisse-bold";
+  margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .level__name {
+    font-size: 22px;
+  }
+}
+
+.level__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.level__link {
+  max-width: 130px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .level__icon img {
+    width: 100%;
+  }
+}
+
+.slider__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.level__wrapper {
+  position: relative;
+}
+
+.swiper-scrollbar {
+  background: #f7f6f4;
+  /* Цвет фона полосы прокрутки */
+  border-radius: 10px;
+  /* Радиус скругления углов полосы прокрутки */
+  height: 4px;
+  /* Высота полосы прокрутки */
+  min-width: 100%;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+}
+
+.swiper-scrollbar-drag {
+  background: #b18b6b;
+  /* Цвет ползунка полосы прокрутки */
+  border-radius: 4px;
+  /* Радиус скругления углов ползунка */
+  height: 100%;
+  /* Высота ползунка */
 }
