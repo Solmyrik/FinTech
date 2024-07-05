@@ -1,0 +1,52 @@
+.intro-main {
+  padding-top: 170px;
+  @media (max-width: 1030px) {
+    padding-top: 16px;
+  }
+  &_subtitle {
+  }
+
+  &__container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @media (max-width: 1030px) {
+      text-align: left;
+      gap: 32px;
+    }
+  }
+
+  &__logo {
+    img {
+      width: 144px;
+      @media (max-width: $mobile) {
+        width: 100px;
+      }
+    }
+    @media (max-width: 1030px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 60px;
+    font-family: $bold;
+    line-height: 120%;
+    @media (max-width: 1030px) {
+      text-align: center;
+    }
+    @media (max-width: $tablet) {
+      font-size: 38px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 28px;
+    }
+  }
+  &__subtitle {
+    @media (max-width: 1030px) {
+      text-align: center;
+    }
+  }
+}

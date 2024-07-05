@@ -1,0 +1,51 @@
+@import "_mixin";
+@import "_null.scss";
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  &._lock {
+    overflow: hidden;
+  }
+  &.lock {
+    overflow: hidden;
+  }
+}
+a {
+  color: $black;
+}
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+body {
+  color: $black;
+  font-size: 16px;
+  font-family: $regular;
+  font-weight: 400;
+  height: 100%;
+  background-color: $white;
+  position: relative;
+  &._lock {
+    overflow: hidden;
+  }
+  &.lock {
+    overflow: hidden;
+  }
+}
+.main {
+  flex: 1 1 auto;
+}
+[class*="__container"] {
+  max-width: $pc;
+  margin: 0 auto;
+  padding: 0px 15px;
+  @media (max-width: $mobile) {
+    padding: 0px 10px;
+  }
+}
+
+@import "_header";
+@import "_intro-main";
+@import "_rates";

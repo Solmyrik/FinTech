@@ -1,0 +1,265 @@
+.header {
+  &__container {
+    max-width: $header;
+  }
+
+  &__body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 81px;
+    @media (max-width: 1030px) {
+      transform: translate(0%, -100%);
+      transition: transform 0.8s;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: auto;
+      background-color: $white;
+      z-index: 3;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 115px;
+      gap: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      &.active {
+        transform: translate(0%, 0%);
+      }
+    }
+  }
+
+  &__menu {
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @media (max-width: 1200px) {
+      gap: 20px;
+    }
+    @media (max-width: 1030px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  &__item {
+    &_arrow {
+      position: relative;
+      span {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      svg {
+        path {
+          transition: all 0.3s;
+        }
+      }
+      &:hover {
+        .sub-menu {
+          display: flex;
+        }
+        svg {
+          path {
+            fill: $brown;
+          }
+        }
+      }
+      @media (max-width: 1030px) {
+        span,
+        svg {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__link {
+    color: $black;
+    font-size: 16px;
+    transition: all 0.3s;
+    &:hover {
+      color: $brown;
+    }
+    @media (max-width: 1030px) {
+      font-size: 20px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    @media (max-width: 1030px) {
+      flex-direction: column;
+      width: 100%;
+      gap: 24px;
+    }
+  }
+
+  &__phone {
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: $bold;
+    transition: all 0.3s;
+    &:hover {
+      color: $brown;
+    }
+    @media (max-width: 1030px) {
+      order: 2;
+    }
+  }
+
+  &__button {
+    @media (max-width: 1030px) {
+      order: 1;
+      width: 100%;
+      height: 60px;
+    }
+  }
+  .header__icons {
+    display: flex;
+    gap: 12px;
+    @media (max-width: 1030px) {
+      order: 3;
+      padding-bottom: 16px;
+    }
+  }
+
+  &__icon {
+    transition: opacity 0.3s;
+    width: 38px;
+    height: 38px;
+    img {
+      width: 38px;
+      height: 38px;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+.menu {
+  &__sub {
+  }
+}
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 31px;
+  left: 0;
+  @media (max-width: 1030px) {
+    display: block;
+    position: static;
+  }
+  &::before {
+    content: "";
+    width: 100%;
+    height: 20px;
+    //  background-color: $black;
+    opacity: 0;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    @media (max-width: 1030px) {
+      display: none;
+    }
+  }
+  &__wrapper {
+    @media (min-width: 1030px) {
+      border-radius: 12px;
+      padding: 24px;
+      width: 299px;
+      box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.07);
+      background: #ffffff;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    @media (max-width: 1030px) {
+      gap: 40px;
+    }
+  }
+
+  &__item {
+    @media (max-width: 1030px) {
+      text-align: center;
+    }
+  }
+
+  &__link {
+    line-height: 160%;
+    transition: all 0.3s;
+    &:hover {
+      color: $brown;
+    }
+    @media (max-width: 1030px) {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.header__burger {
+  display: none;
+  @media (max-width: 1030px) {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 23px;
+    cursor: pointer;
+    z-index: 10;
+    right: 15px;
+    top: 20px;
+    transform: translate(0, -50%);
+
+    span {
+      transition: 0.3s all;
+      top: calc(50% - 1px);
+      left: 0px;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      min-height: 3px;
+      max-height: 3px;
+      border-radius: 10px;
+      background-color: $black;
+
+      &:first-child {
+        top: 0px;
+      }
+
+      &:last-child {
+        top: auto;
+        bottom: 0px;
+      }
+    }
+
+    &.active {
+      height: 17px;
+      span {
+        transform: scale(0);
+        background-color: $black;
+
+        &:first-child {
+          transform: rotate(-45deg);
+          top: 6px;
+        }
+
+        &:last-child {
+          transform: rotate(45deg);
+          bottom: 8px;
+        }
+      }
+    }
+  }
+}

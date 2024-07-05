@@ -1,0 +1,99 @@
+$header: 1550px;
+$pc: 1330px;
+$laptop: 1360px;
+$md14: 1040px;
+$tablet: 992px;
+$mobile: 767px;
+$md4: 479.98px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1500;
+
+//======================================================================================================================
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  img {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: "Suisse-reg";
+  src: url("../fonts/SuisseIntl-Regular.woff2") format("woff2"),
+    url("../fonts/SuisseIntl-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Suisse-bold";
+  src: url("../fonts/SuisseIntl-SemiBold.woff2") format("woff2"),
+    url("../fonts/SuisseIntl-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Suisse-med";
+  src: url("../fonts/SuisseIntl-Medium.woff2") format("woff2"),
+    url("../fonts/SuisseIntl-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+//color
+$brown: #b18b6b;
+$white: #fefefc;
+$black: #1f2123;
+$light: #f7f6f4;
+$darklight: #edecea;
+
+//fonts
+$regular: "Suisse-reg";
+$medium: "Suisse-med";
+$bold: "Suisse-bold";
+
+._btn {
+  border-radius: 6px;
+  padding: 12px 20px;
+  color: #ffffff;
+  background-color: $brown;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: #856952;
+  }
+}
+._h2 {
+  font-weight: 600;
+  font-size: 48px;
+  font-family: $bold;
+  font-weight: 600;
+  margin-bottom: 60px;
+  @media (max-width: $mobile) {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+}
+._h4 {
+  font-weight: 400;
+  font-size: 24px;
+  @media (max-width: $mobile) {
+    font-size: 18px;
+  }
+}
+
+._margin-b {
+  margin-bottom: 130px;
+  @media (max-width: $tablet) {
+    margin-bottom: 65px;
+  }
+}
