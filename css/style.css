@@ -1243,3 +1243,95 @@ body.lock {
   display: flex;
   gap: 8px;
 }
+
+.program__title {
+  max-width: 1080px;
+}
+
+@media (max-width: 767px) {
+  .program__title {
+    max-width: 390px;
+  }
+}
+
+.program__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 992px) {
+  .program__body {
+    -ms-grid-columns: (280px)[3];
+        grid-template-columns: repeat(3, 280px);
+    overflow: auto;
+    padding-bottom: 10px;
+  }
+}
+
+.program__item {
+  padding: 32px;
+  border-radius: 12px;
+  background-color: #f7f6f4;
+}
+
+@media (max-width: 992px) {
+  .program__item {
+    min-width: 280px;
+    width: 280px;
+    padding: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.program__icon {
+  margin-bottom: 68px;
+}
+
+.program__icon img {
+  width: 64px;
+  height: 64px;
+}
+
+@media (max-width: 992px) {
+  .program__icon {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+}
+
+.program__name {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 120%;
+  color: #393737;
+  margin-bottom: 8px;
+  font-family: "Suisse-med";
+}
+
+@media (max-width: 992px) {
+  .program__name {
+    font-size: 20px;
+  }
+}
+
+.program__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+@media (max-width: 992px) {
+  .program__description {
+    font-size: 14px;
+  }
+}

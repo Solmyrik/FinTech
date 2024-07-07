@@ -1,0 +1,67 @@
+.program {
+  &__container {
+  }
+
+  &__title {
+    max-width: 1080px;
+    @media (max-width: $mobile) {
+      max-width: 390px;
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(3, 280px);
+      overflow: auto;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__item {
+    padding: 32px;
+    border-radius: 12px;
+    background-color: $light;
+    @media (max-width: $tablet) {
+      min-width: 280px;
+      width: 280px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__icon {
+    img {
+      width: 64px;
+      height: 64px;
+    }
+    margin-bottom: 68px;
+    @media (max-width: $tablet) {
+      flex: 1 1 auto;
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 120%;
+    color: #393737;
+    margin-bottom: 8px;
+    font-family: $medium;
+    @media (max-width: $tablet) {
+      font-size: 20px;
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
+  }
+}
