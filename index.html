@@ -59,7 +59,7 @@
             </nav>
             <div class="header__contacts">
               <a href="tel:+79771048888" class="header__phone">+7 977 104 88 88</a>
-              <a href="" class="header__button _btn">Перезвоните мне</a>
+              <a data-popup="#popup" href="" class="header__button _btn">Перезвоните мне</a>
               <div class="header__icons">
                 <a href="" class="header__icon"><img src="img/icons/tg.svg" alt="telegram" /></a>
                 <a href="" class="header__icon"><img src="img/icons/wa.svg" alt="WhatsApp" /></a>
@@ -589,14 +589,31 @@
                 </ul>
               </nav>
             </div>
-            <a href="" class="footer__button _btn">Перезвоните мне</a>
+            <a data-popup="#popup" class="footer__button _btn">Перезвоните мне</a>
           </div>
         </div>
       </footer>
+      <div id="popup" aria-hidden="true" class="popup popup-main">
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <div class="popup__body popup__body_one">
+              <h2 class="popup__title _h2">Напишите нам</h2>
+              <div class="popup__icons">
+                <a href="" class="popup__icon"><img src="img/icons/tg.svg" alt="telegram" /></a>
+                <a href="" class="popup__icon"><img src="img/icons/wa.svg" alt="WhatsApp" /></a>
+              </div>
+            </div>
+            <div data-close class="popup-close popup__close">
+              <img src="img/icons/close.svg" alt="close" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/reviews.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
