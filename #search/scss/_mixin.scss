@@ -73,6 +73,18 @@ $bold: "Suisse-bold";
     margin: 0 auto;
     font-size: 16px;
   }
+  &._border-btn {
+    background-color: inherit;
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: $brown;
+    border: 1px solid $brown;
+    transition: all 0.3s;
+    &:hover {
+      color: $white;
+      background-color: $brown;
+    }
+  }
   &:hover {
     background-color: #856952;
   }
