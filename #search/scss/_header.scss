@@ -1,4 +1,8 @@
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   &__container {
     max-width: $header;
   }
@@ -209,6 +213,30 @@
   }
 }
 
+.mobile-contact {
+  display: none;
+  @media (max-width: 1030px) {
+    display: flex;
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    align-items: center;
+    gap: 10px;
+  }
+  @media (max-width: 370px) {
+    right: 18px;
+    top: 50px;
+  }
+  &__link {
+    img {
+      width: 30px;
+    }
+  }
+  &__tel {
+    font-size: 14px;
+  }
+}
+
 .header__burger {
   display: none;
   @media (max-width: 1030px) {
@@ -219,7 +247,7 @@
     cursor: pointer;
     z-index: 10;
     right: 15px;
-    top: 20px;
+    top: 25px;
     transform: translate(0, -50%);
 
     span {

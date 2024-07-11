@@ -148,3 +148,231 @@
 .currency-table td {
   background-color: $light;
 }
+
+.rates {
+  &__calculator {
+  }
+
+  &__subtitle {
+  }
+  .currency-table {
+    @media (max-width: $mobile) {
+      margin-bottom: 40px;
+    }
+  }
+}
+.calculator-rates {
+  &__body {
+    background-color: $light;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    position: relative;
+    // justify-content: space-between;
+    @media (max-width: 1310px) {
+      flex-direction: column;
+      gap: 16px;
+    }
+    @media (max-width: $tablet) {
+      padding: 32px 16px;
+      border-radius: 0px;
+    }
+  }
+
+  &__error {
+    position: absolute;
+    bottom: 33px;
+    left: 32px;
+    color: $black;
+    font-size: 14px;
+    // display: none;
+    transition: all 0.3s;
+    transform: scale(0);
+    opacity: 0;
+    &.active {
+      // display: block;
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &__update {
+    font-size: 14px;
+    @media (max-width: $mobile) {
+      text-align: left;
+    }
+  }
+
+  &__calculator {
+    display: flex;
+    gap: 32px;
+    @media (max-width: 1310px) {
+      justify-content: space-between;
+    }
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  &__left {
+    display: flex;
+    gap: 8px;
+    @media (max-width: $tablet) {
+      justify-content: center;
+    }
+  }
+
+  &__input {
+    width: 290px;
+    height: 50px;
+    border: 1px solid #e2e3e4;
+    border-radius: 6px;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    font-weight: $bold;
+    color: $black;
+    cursor: pointer;
+    &::placeholder {
+      color: $black;
+    }
+    @media (max-width: 1310px) {
+      width: 200px;
+    }
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+    &:focus {
+      border: 1px solid #8c8c8c;
+    }
+    &:active {
+      border: 1px solid #8c8c8c;
+    }
+  }
+
+  &__select {
+    width: 150px;
+    height: 50px;
+  }
+
+  &__port {
+  }
+
+  &__reverse {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid #e2e3e4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      border: 1px solid $black;
+    }
+    &:active {
+      transform: scale(1.1);
+    }
+    @media (max-width: $tablet) {
+      margin: 0 auto;
+    }
+  }
+
+  &__right {
+    display: flex;
+    gap: 8px;
+    @media (max-width: $tablet) {
+      justify-content: center;
+    }
+  }
+
+  &__buttons {
+    div {
+      display: flex;
+      justify-content: flex-end;
+      @media (max-width: 1310px) {
+        justify-content: center;
+      }
+    }
+    @media (max-width: 1310px) {
+      text-align: center;
+    }
+  }
+
+  &__button {
+    height: 50px;
+    width: 100%;
+    max-width: 176px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    @media (max-width: $mobile) {
+      max-width: 100%;
+    }
+  }
+}
+.top-calculator__select-wrapper {
+  width: 150px;
+  min-width: 150px;
+  height: 50px;
+  border-radius: 6px;
+  position: relative;
+}
+.calculator-rates__arrow {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  z-index: 1;
+  transform: translate(0, -50%);
+  height: 6px;
+}
+
+.choices[data-type*="select-one"] .choices__input {
+  width: 150px !important;
+  min-width: 150px;
+  height: 50px;
+  border-radius: 6px;
+}
+.choices__inner {
+  height: 50px;
+  border-radius: 6px;
+  background-color: $darklight !important;
+}
+.choices__list--single .choices__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.select-image {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 100%;
+}
+.choices__list--single {
+  padding: 0 !important;
+  padding-left: 10px !important;
+}
+.choices__item .choices__item--selectable {
+  font-size: 14px;
+}
+.choices__list--dropdown .choices__item--selectable.is-highlighted,
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  background-color: $darklight !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 17px !important;
+  white-space: nowrap;
+}
+.choices__list--dropdown .choices__item--selectable,
+.choices__list[aria-expanded] .choices__item--selectable {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 17px !important;
+  white-space: nowrap;
+}
+.choices[data-type*="select-one"]::after {
+  display: none;
+}
