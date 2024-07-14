@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>FinTech</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--  header v 1.0 -->
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a href="exchange.html" class="header__link">Обмен валют</a>
+                </li>
+                <li class="header__item">
+                  <a href="crypto.html" class="header__link">Криптовалюта</a>
+                </li>
+                <li class="header__item header__item_arrow">
+                  <a href="word.html" class="header__link">
+                    <span
+                      >Услуги
+                      <svg
+                        width="8"
+                        height="5"
+                        viewBox="0 0 8 5"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.21757 1.26257L4.03559 4.44455C3.84032 4.63981 3.52374 4.63981 3.32848 4.44455L0.146499 1.26257C-0.0487633 1.0673 -0.0487633 0.750721 0.146499 0.555458C0.341762 0.360196 0.658344 0.360196 0.853606 0.555458L3.68203 3.38389L6.51046 0.555458C6.70572 0.360196 7.0223 0.360196 7.21757 0.555458C7.41283 0.750721 7.41283 1.0673 7.21757 1.26257Z"
+                          fill="#1F2123"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                  <div class="menu__sub sub-menu">
+                    <div class="sub-menu__wrapper">
+                      <ul class="sub-menu__list">
+                        <li class="sub-menu__item">
+                          <a href="word.html" class="sub-menu__link"
+                            >Международные перестановки по всему миру</a
+                          >
+                        </li>
+                        <li class="sub-menu__item">
+                          <a href="invoice.html" class="sub-menu__link"
+                            >Оплата инвойс платежей/SWIFT</a
+                          >
+                        </li>
+                        <li class="sub-menu__item">
+                          <a href="usdt.html" class="sub-menu__link">Покупка и продажа USDT</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="header__item"><a href="news.html" class="header__link">Новости</a></li>
+                <li class="header__item">
+                  <a href="contacts.html" class="header__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__contacts">
+              <a href="tel:+79771048888" class="header__phone">+7 977 104 88 88</a>
+              <a data-popup="#popup" href="" class="header__button _btn">Перезвоните мне</a>
+              <div class="header__icons">
+                <a href="" class="header__icon"><img src="img/icons/tg.svg" alt="telegram" /></a>
+                <a href="" class="header__icon"><img src="img/icons/wa.svg" alt="WhatsApp" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__mobile-contact mobile-contact">
+            <a href="tel:+79771048888" class="mobile-contact__tel">+7 977 104 88 88</a>
+            <a href="" class="mobile-contact__link"
+              ><img src="img/icons/tg.svg" alt="telegram"
+            /></a>
+            <a href="" class="mobile-contact__link"
+              ><img src="img/icons/wa.svg" alt="WhatsApp"
+            /></a>
+          </div>
+        </div>
+      </header>
+      <!-- header v 1.0 end -->
+      <main class="main">
+        <section class="intro _margin-b">
+          <div class="intro__container">
+            <a href="index.html" class="intro__logo">
+              <img src="img/logo.svg" alt="logo" />
+            </a>
+            <h1 class="intro__title">Контакты</h1>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__container">
+            <div class="contacts__body">
+              <div class="contacts__items">
+                <div class="contacts__item">
+                  <p>Телефон</p>
+                  <a href="tel:+79771048888" class="contacts__link">+7 977 104 88 88</a>
+                </div>
+                <div class="contacts__item">
+                  <p>Email</p>
+                  <a href="mailto:fintechexchange@mail.ru" class="contacts__link"
+                    >fintechexchange@mail.ru</a
+                  >
+                </div>
+              </div>
+              <div class="footer__icons">
+                <a href="" class="footer__icon"><img src="img/icons/tg.svg" alt="telegram" /></a>
+                <a href="" class="footer__icon"><img src="img/icons/wa.svg" alt="WhatsApp" /></a>
+              </div>
+            </div>
+            <article class="form">
+              <h3 class="form__title">
+                Обращайтесь к нам, если остались дополнительные вопросы или хотите оставить заявку
+              </h3>
+              <form class="form__form">
+                <div class="form__body">
+                  <label for="" class="form__label">
+                    <p>Введите имя</p>
+                    <input type="text" class="form__input" placeholder="Александр" />
+                  </label>
+                  <label for="" class="form__label">
+                    <p>Введите телефон</p>
+                    <input type="tel" class="form__input" placeholder="+7 901 123 45 67" />
+                  </label>
+                  <label for="" class="form__label">
+                    <button type="submit" class="form__button _btn">Оставить заявку</button>
+                  </label>
+                </div>
+                <label class="consultation__check _label-wallet">
+                  <input checked class="_checkbox-wallet" type="checkbox" />
+                  <span class="_fake-wallet"></span>
+                  <span class="_wallet-chectext"
+                    >Нажимая на кнопку, я соглашаюсь с
+                    <a href="conditi.html" class="_link">политикой обработки персональных данных</a>
+                    и принимаю
+                    <a href="conditi.html" class="_link">правила пользования Платформой</a>
+                  </span>
+                </label>
+              </form>
+            </article>
+          </div>
+        </section>
+      </main>
+      <!--  footer v 1.0 -->
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__left">
+            <a href="index.html" class="footer__logo">
+              <img src="img/logo.svg" alt="logo" />
+            </a>
+            <div class="footer__left-column">
+              <div class="footer__row">
+                <h4 class="footer__name">Телефон</h4>
+                <a href="tel:+79771048888" class="footer__phone">+7 977 104 88 88</a>
+              </div>
+              <div class="footer__row">
+                <h4 class="footer__name">Email</h4>
+                <a href="mailto:fintechexchange@mail.ru" class="footer__phone"
+                  >fintechexchange@mail.ru</a
+                >
+              </div>
+              <div class="footer__icons">
+                <a href="" class="footer__icon"><img src="img/icons/tg.svg" alt="telegram" /></a>
+                <a href="" class="footer__icon"><img src="img/icons/wa.svg" alt="WhatsApp" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__right">
+            <div class="footer__column">
+              <h4 class="footer__name">ФинТех</h4>
+              <nav class="footer__menu">
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="exchange.html" class="footer__link">Обмен валют</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="crypto.html" class="footer__link">Криптовалюта</a>
+                  </li>
+                  <li class="footer__item"><a href="news.html" class="footer__link">Новости</a></li>
+                  <li class="footer__item">
+                    <a href="contacts.html" class="footer__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <h4 class="footer__name">Услуги</h4>
+              <nav class="footer__menu">
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="word.html" class="footer__link"
+                      >Международные перестановки <br />
+                      по всему миру</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a href="invoice.html" class="footer__link">Оплата инвойс платежей/SWIFT</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="usdt.html" class="footer__link">Покупка и продажа USDT</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <a data-popup="#popup" class="footer__button _btn">Перезвоните мне</a>
+          </div>
+        </div>
+      </footer>
+      <!--  footer v 1.0 end -->
+      <div id="popup" aria-hidden="true" class="popup popup-main">
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <div class="popup__body popup__body_one">
+              <h2 class="popup__title _h2">Напишите нам</h2>
+              <div class="popup__icons">
+                <a href="" class="popup__icon popup__phone"
+                  ><img src="img/icons/phone.svg" alt="phone"
+                /></a>
+                <a href="" class="popup__icon"><img src="img/icons/tg.svg" alt="telegram" /></a>
+                <a href="" class="popup__icon"><img src="img/icons/wa.svg" alt="WhatsApp" /></a>
+              </div>
+            </div>
+            <div data-close class="popup-close popup__close">
+              <img src="img/icons/close.svg" alt="close" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/header.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>

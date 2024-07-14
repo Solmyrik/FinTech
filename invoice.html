@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>FinTech</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/choices.min.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -92,154 +93,93 @@
         </div>
       </header>
       <!-- header v 1.0 end -->
-
       <main class="main">
-        <section class="intro-main _margin-b">
-          <div class="intro-main__container">
-            <div class="intro-main__logo">
+        <section class="intro intro_green">
+          <div class="intro__container">
+            <a href="index.html" class="intro__logo">
               <img src="img/logo.svg" alt="logo" />
+            </a>
+            <h1 class="intro__title intro__title_green">Оплата инвойс платежей/SWIFT</h1>
+            <div class="intro__image intro__image_green">
+              <img src="img/level/list.png" alt="list" />
             </div>
-            <h1 class="intro-main__title">
-              ПРЕДОСТАВИМ НАШИ УСЛУГИ ПРОФЕССИОНАЛЬНО, НАДЕЖНО И С ВЫГОДОЙ ДЛЯ КАЖДОГО КЛИЕНТА
-            </h1>
-            <h4 class="intro-main__subtitle _h4">
-              Более 15 лет профессионального сопровождения клиентов
+          </div>
+        </section>
+        <section class="invoice _margin-b">
+          <div class="invoice__container">
+            <h2 class="service__title _h2">Платежи по всей планете</h2>
+            <h4 class="service__subtitle">
+              Оплатим ваши инвойсы, грузы, контракты за услуги и др.
             </h4>
-          </div>
-        </section>
-        <section class="rates _margin-b">
-          <div class="rates__container">
-            <h2 class="rates__title _h2">Наши курсы</h2>
-            <div class="rates__body">
-              <h4 class="rates__subtitle _h4">Курс ФинТех</h4>
-              <table class="currency-table">
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th>Покупка</th>
-                    <th>Продажа</th>
-                    <th>Объем</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>USD белый</td>
-                    <td>93.30</td>
-                    <td>96.25</td>
-                    <td>от 5000 <span>у.е.</span></td>
-                  </tr>
-                  <tr>
-                    <td>USD синий</td>
-                    <td>93.30</td>
-                    <td>96.25</td>
-                    <td>от 5000 <span>у.е.</span></td>
-                  </tr>
-                  <tr>
-                    <td>EUR</td>
-                    <td>103.30</td>
-                    <td>106.25</td>
-                    <td>от 5000 <span>у.е.</span></td>
-                  </tr>
-                  <tr>
-                    <td>USDT/RUB</td>
-                    <td>99.30</td>
-                    <td>103.25</td>
-                    <td>от 5000 <span>у.е.</span></td>
-                  </tr>
-                  <tr>
-                    <td>USDT/USD</td>
-                    <td>123.30</td>
-                    <td>126.25</td>
-                    <td>от 5000 <span>у.е.</span></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="rates__bottom">
-              <h4 class="rates__subtitle _h4">Биржевой курс</h4>
-              <div class="rates__items">
-                <article class="rates__item">
-                  <div class="rates__header">
-                    <div id="ch-usd" class="rates__value">93.30</div>
-                    <div class="rates__currency">USD/RUB</div>
-                  </div>
-                  <div class="rates__volume">Любой объем</div>
-                </article>
-                <article class="rates__item">
-                  <div class="rates__header">
-                    <div id="ch-eur" class="rates__value">103.30</div>
-                    <div class="rates__currency">EUR/RUB</div>
-                  </div>
-                  <div class="rates__volume">Любой объем</div>
-                </article>
-                <article class="rates__item">
-                  <div class="rates__header">
-                    <div id="ch-cny" class="rates__value">12.30</div>
-                    <div class="rates__currency">CNY/RUB</div>
-                  </div>
-                  <div class="rates__volume">Любой объем</div>
-                </article>
-                <article class="rates__item">
-                  <div class="rates__header">
-                    <div id="ch-btc" class="rates__value">71 223.30</div>
-                    <div class="rates__currency">BTC/USD</div>
-                  </div>
-                  <div class="rates__volume">Любой объем</div>
-                </article>
-                <article class="rates__item">
-                  <div class="rates__header">
-                    <div id="ch-eth" class="rates__value">4 123.30</div>
-                    <div class="rates__currency">ETH/USD</div>
-                  </div>
-                  <div class="rates__volume">Любой объем</div>
-                </article>
+            <div class="invoice__row">
+              <div class="invoice__symbol">📌</div>
+              <div class="invoice__texts">
+                <p>Оплата инвойс-платежей за сутки в США, Китай, страны ЕС и Турцию. </p>
+                <a href="">Остальные страны по запросу</a>
               </div>
-              <button class="rater__button _btn _big-btn">Заказать обмен</button>
             </div>
-          </div>
-        </section>
-        <section class="level _margin-b">
-          <div class="level__container">
-            <h2 class="level__title _h2">
-              Более 15 лет придерживаемся высокого уровня обслуживания
-            </h2>
-            <div class="level__wrapper">
-              <div class="swiper-container level__body slider swiper-block">
-                <div class="swiper-wrapper slider__wrapper">
-                  <article class="swiper-slide level__item level__item_blue">
-                    <div class="level__content">
-                      <a data-popup="#popup" href="#" class="level__button _btn">оставить заявку</a>
-                      <h3 class="level__name">Международные перестановки по всему миру</h3>
-                      <a href="#" class="level__link _btn">Подробнее</a>
-                    </div>
-                    <div class="level__icon">
-                      <img src="img/level/planet.png" alt="planet" />
-                    </div>
-                  </article>
-                  <article class="swiper-slide level__item level__item_green">
-                    <div class="level__content">
-                      <a data-popup="#popup" href="#" class="level__button _btn">оставить заявку</a>
-                      <h3 class="level__name">Оплата инвойс платежей/SWIFT</h3>
-                      <a href="#" class="level__link _btn">Подробнее</a>
-                    </div>
-                    <div class="level__icon">
-                      <img src="img/level/list.png" alt="list" />
-                    </div>
-                  </article>
-                  <article class="swiper-slide level__item level__item_purple">
-                    <div class="level__content">
-                      <a data-popup="#popup" href="#" class="level__button _btn">оставить заявку</a>
-                      <h3 class="level__name">Покупка и продажа USDT</h3>
-                      <a href="#" class="level__link _btn">Подробнее</a>
-                    </div>
-                    <div class="level__icon">
-                      <img src="img/level/usdt.png" alt="usdt" />
-                    </div>
-                  </article>
+            <div class="invoice__body">
+              <article class="invoice__item">
+                <div class="invoice__num">1.</div>
+                <p class="invoice__decription">
+                  Отправляете нам примерный инвойс и мы обговариваем требования по компании на
+                  которую будет ставить инвойс
+                </p>
+              </article>
+              <article class="invoice__item">
+                <div class="invoice__num">2.</div>
+                <p class="invoice__decription">
+                  Мы в ответ отправляем вам компанию, с которой можем оплатить данный инвойс
+                </p>
+              </article>
+              <article class="invoice__item">
+                <div class="invoice__num">3.</div>
+                <p class="invoice__decription">
+                  Вы одобряете компанию (если данная компания не подойдет, мы подберем другую)
+                </p>
+              </article>
+              <article class="invoice__item">
+                <div class="invoice__num">4.</div>
+                <p class="invoice__decription">
+                  Далее ставите платеж на нашу фирму, присылаете нам готовый инвойс с суммой на нашу
+                  фирму и мы его оплачиваем
+                </p>
+              </article>
+            </div>
+            <div class="invoice__label">
+              <div class="invoice__symbol">📌</div>
+              <p>Стоимость услуги 1,9-2,8%</p>
+            </div>
+            <article class="form">
+              <h3 class="form__title">
+                Обращайтесь к нам, если остались дополнительные вопросы или хотите оставить заявку
+              </h3>
+              <form class="form__form">
+                <div class="form__body">
+                  <label for="" class="form__label">
+                    <p>Введите имя</p>
+                    <input type="text" class="form__input" placeholder="Александр" />
+                  </label>
+                  <label for="" class="form__label">
+                    <p>Введите телефон</p>
+                    <input type="tel" class="form__input" placeholder="+7 901 123 45 67" />
+                  </label>
+                  <label for="" class="form__label">
+                    <button type="submit" class="form__button _btn">Оставить заявку</button>
+                  </label>
                 </div>
-                <div class="swiper-scrollbar"></div>
-              </div>
-            </div>
+                <label class="consultation__check _label-wallet">
+                  <input checked class="_checkbox-wallet" type="checkbox" />
+                  <span class="_fake-wallet"></span>
+                  <span class="_wallet-chectext"
+                    >Нажимая на кнопку, я соглашаюсь с
+                    <a href="conditi.html" class="_link">политикой обработки персональных данных</a>
+                    и принимаю
+                    <a href="conditi.html" class="_link">правила пользования Платформой</a>
+                  </span>
+                </label>
+              </form>
+            </article>
           </div>
         </section>
         <section class="advantages _margin-b">
@@ -465,98 +405,7 @@
             </div>
           </div>
         </section>
-        <section class="news">
-          <div class="news__container">
-            <h2 class="news__title _h2">Новости</h2>
-            <div class="news__body">
-              <article class="news__item">
-                <div class="news__img">
-                  <img src="img/news/1.jpg" alt="news" />
-                </div>
-                <div class="news__content">
-                  <h3 class="news__name">
-                    Arbitrum и Base лидируют в рейтинге сетей L2 по адресной активности
-                  </h3>
-                  <p class="news__description">
-                    По оценке GrowThepia, самым популярным блокчейном второго уровня ...
-                  </p>
-                  <a href="" class="news__button _btn _border-btn">Подробнее</a>
-                </div>
-              </article>
-              <article class="news__item">
-                <div class="news__img">
-                  <img src="img/news/2.jpg" alt="news" />
-                </div>
-                <div class="news__content">
-                  <h3 class="news__name">Китовый заплыв простимулировал взлет ChainLink</h3>
-                  <p class="news__description">
-                    За сутки ChainLink подскочил почти на 19% — до $16,42. Капитализация альткоина
-                    17 мая достигла $9,652 млрд.
-                  </p>
-                  <a href="" class="news__button _btn _border-btn">Подробнее</a>
-                </div>
-              </article>
-              <article class="news__item">
-                <div class="news__img">
-                  <img src="img/news/3.jpg" alt="news" />
-                </div>
-                <div class="news__content">
-                  <h3 class="news__name">Капитализация стейблкоинов за полгода возросла на 25%</h3>
-                  <p class="news__description">
-                    Предложение шести крупнейших стейблкоинов с октября по апрель увеличилось на
-                    25%.
-                  </p>
-                  <a href="" class="news__button _btn _border-btn">Подробнее</a>
-                </div>
-              </article>
-              <article class="news__item">
-                <div class="news__img">
-                  <img src="img/news/4.jpg" alt="news" />
-                </div>
-                <div class="news__content">
-                  <h3 class="news__name">CryptoНеделя #135: факты, тренды, аналитика</h3>
-                  <p class="news__description">
-                    Грянувшее в середине недели обострение волатильности не пошатнуло
-                    фундаментальные показатели биткоина.
-                  </p>
-                  <a href="" class="news__button _btn _border-btn">Подробнее</a>
-                </div>
-              </article>
-              <article class="news__item">
-                <div class="news__img">
-                  <img src="img/news/5.jpg" alt="news" />
-                </div>
-                <div class="news__content">
-                  <h3 class="news__name">
-                    Обстановка на опционном рынке намекает на просадку биткоина
-                  </h3>
-                  <p class="news__description">
-                    По оценке аналитиков CF Benchmark, трейдеры на опционном рынке готовятся к
-                    небольшой просадке ...
-                  </p>
-                  <a href="" class="news__button _btn _border-btn">Подробнее</a>
-                </div>
-              </article>
-              <article class="news__item">
-                <div class="news__img">
-                  <img src="img/news/6.jpg" alt="news" />
-                </div>
-                <div class="news__content">
-                  <h3 class="news__name">
-                    Рецессия в мире NFT: 95% активов подешевели почти до нуля
-                  </h3>
-                  <p class="news__description">
-                    В 2021 году начался знаменитый взлет рынка токенизированых коллекций.
-                  </p>
-                  <a href="" class="news__button _btn _border-btn">Подробнее</a>
-                </div>
-              </article>
-            </div>
-            <button class="news__link _btn _big-btn">Читать еще</button>
-          </div>
-        </section>
       </main>
-
       <!--  footer v 1.0 -->
       <footer class="footer">
         <div class="footer__container">
@@ -623,7 +472,6 @@
         </div>
       </footer>
       <!--  footer v 1.0 end -->
-
       <div id="popup" aria-hidden="true" class="popup popup-main">
         <div class="popup__wrapper">
           <div class="popup__content">
@@ -644,11 +492,8 @@
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/header.js"></script>
-    <script src="js/slider.js"></script>
     <script src="js/reviews.js"></script>
     <script src="js/popup.js"></script>
-    <script src="js/coingecko.js"></script>
   </body>
 </html>

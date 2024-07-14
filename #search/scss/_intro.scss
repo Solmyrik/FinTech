@@ -24,11 +24,35 @@
       rgb(232, 220, 242) 100%
     );
   }
+  &_blue {
+    background: radial-gradient(
+      84.78% 116.18% at 10.62% 4.12%,
+      rgb(206, 228, 255) 0%,
+      rgb(210, 229, 255) 50%,
+      rgb(212, 227, 254) 99.90000128746033%,
+      rgb(199, 219, 254) 100%
+    );
+  }
+  &_green {
+    background: radial-gradient(
+      84.78% 116.18% at 10.62% 4.12%,
+      rgb(205, 247, 217) 0%,
+      rgb(220, 251, 230) 50%,
+      rgb(209, 246, 226) 99.90000128746033%,
+      rgb(191, 242, 214) 100%
+    );
+  }
+
+  &_news {
+    @media (max-width: $mobile) {
+      margin-bottom: 0;
+    }
+  }
   &__container {
+    position: relative;
   }
 
   &__logo {
-    margin-bottom: 40px;
     img {
       width: 144px;
       @media (max-width: $mobile) {
@@ -36,16 +60,100 @@
       }
     }
     @media (max-width: $mobile) {
-      margin-bottom: 103px;
+      // margin-bottom: 103px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    bottom: -256px;
+    img {
+      width: 280px;
+    }
+    @media (max-width: $tablet) {
+      img {
+        width: 100px;
+      }
+      bottom: -84px;
+      right: 15px;
+    }
+    &_word {
+      img {
+        width: 500px;
+      }
+      @media (max-width: $pc) {
+        right: 15px;
+      }
+      @media (max-width: $tablet) {
+        img {
+          width: 155px;
+        }
+      }
+      @media (max-width: 370px) {
+        img {
+          width: 135px;
+        }
+      }
+    }
+    &_green {
+      bottom: -306px;
+      img {
+        width: 381px;
+        @media (max-width: $pc) {
+          width: 300px;
+        }
+        @media (max-width: 1020px) {
+          width: 155px;
+        }
+        @media (max-width: 380px) {
+          width: 120px;
+        }
+      }
+      @media (max-width: $pc) {
+        bottom: -205px;
+        right: 15px;
+      }
+      @media (max-width: 1020px) {
+        bottom: -105px;
+        right: 15px;
+      }
     }
   }
 
   &__title {
+    margin-top: 40px;
     font-weight: 600;
     font-size: 60px;
     font-family: $bold;
     @media (max-width: $mobile) {
       font-size: 28px;
+      margin-top: 103px;
+    }
+    &_usdt {
+      @media (max-width: $mobile) {
+        max-width: 350px;
+      }
+    }
+    &_word {
+      max-width: 1020px;
+      @media (max-width: $tablet) {
+        max-width: 600px;
+      }
+      @media (max-width: $mobile) {
+        max-width: 320px;
+      }
+    }
+    &_green {
+      @media (max-width: $pc) {
+        max-width: 600px;
+      }
+      @media (max-width: $mobile) {
+        max-width: 230px;
+      }
+      @media (max-width: 380px) {
+        font-size: 24px;
+      }
     }
   }
 }

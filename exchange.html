@@ -4,20 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>FinTech</title>
-    <link rel="stylesheet" href="css/style1.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/choices.min.css" />
   </head>
   <body>
     <div class="wrapper">
+      <!--  header v 1.0 -->
       <header class="header">
         <div class="header__container">
           <div class="header__body">
             <nav class="header__menu">
               <ul class="header__list">
-                <li class="header__item"><a href="" class="header__link">Обмен валют</a></li>
-                <li class="header__item"><a href="" class="header__link">Криптовалюта</a></li>
+                <li class="header__item">
+                  <a href="exchange.html" class="header__link">Обмен валют</a>
+                </li>
+                <li class="header__item">
+                  <a href="crypto.html" class="header__link">Криптовалюта</a>
+                </li>
                 <li class="header__item header__item_arrow">
-                  <a href="" class="header__link">
+                  <a href="word.html" class="header__link">
                     <span
                       >Услуги
                       <svg
@@ -40,22 +45,26 @@
                     <div class="sub-menu__wrapper">
                       <ul class="sub-menu__list">
                         <li class="sub-menu__item">
-                          <a href="" class="sub-menu__link"
+                          <a href="word.html" class="sub-menu__link"
                             >Международные перестановки по всему миру</a
                           >
                         </li>
                         <li class="sub-menu__item">
-                          <a href="" class="sub-menu__link">Оплата инвойс платежей/SWIFT</a>
+                          <a href="invoice.html" class="sub-menu__link"
+                            >Оплата инвойс платежей/SWIFT</a
+                          >
                         </li>
                         <li class="sub-menu__item">
-                          <a href="" class="sub-menu__link">Покупка и продажа USDT</a>
+                          <a href="usdt.html" class="sub-menu__link">Покупка и продажа USDT</a>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </li>
-                <li class="header__item"><a href="" class="header__link">Новости</a></li>
-                <li class="header__item"><a href="" class="header__link">Контакты</a></li>
+                <li class="header__item"><a href="news.html" class="header__link">Новости</a></li>
+                <li class="header__item">
+                  <a href="contacts.html" class="header__link">Контакты</a>
+                </li>
               </ul>
             </nav>
             <div class="header__contacts">
@@ -83,12 +92,13 @@
           </div>
         </div>
       </header>
+      <!-- header v 1.0 end -->
       <main class="main">
         <section class="intro">
           <div class="intro__container">
-            <div class="intro__logo">
+            <a href="index.html" class="intro__logo">
               <img src="img/logo.svg" alt="logo" />
-            </div>
+            </a>
             <h1 class="intro__title">Обмен валют</h1>
           </div>
         </section>
@@ -427,6 +437,7 @@
           </div>
         </section>
       </main>
+      <!--  footer v 1.0 -->
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__left">
@@ -455,10 +466,16 @@
               <h4 class="footer__name">ФинТех</h4>
               <nav class="footer__menu">
                 <ul class="footer__list">
-                  <li class="footer__item"><a href="" class="footer__link">Обмен валют</a></li>
-                  <li class="footer__item"><a href="" class="footer__link">Криптовалюта</a></li>
-                  <li class="footer__item"><a href="" class="footer__link">Новости</a></li>
-                  <li class="footer__item"><a href="" class="footer__link">Контакты</a></li>
+                  <li class="footer__item">
+                    <a href="exchange.html" class="footer__link">Обмен валют</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="crypto.html" class="footer__link">Криптовалюта</a>
+                  </li>
+                  <li class="footer__item"><a href="news.html" class="footer__link">Новости</a></li>
+                  <li class="footer__item">
+                    <a href="contacts.html" class="footer__link">Контакты</a>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -467,16 +484,16 @@
               <nav class="footer__menu">
                 <ul class="footer__list">
                   <li class="footer__item">
-                    <a href="" class="footer__link"
+                    <a href="word.html" class="footer__link"
                       >Международные перестановки <br />
                       по всему миру</a
                     >
                   </li>
                   <li class="footer__item">
-                    <a href="" class="footer__link">Оплата инвойс платежей/SWIFT</a>
+                    <a href="invoice.html" class="footer__link">Оплата инвойс платежей/SWIFT</a>
                   </li>
                   <li class="footer__item">
-                    <a href="" class="footer__link">Покупка и продажа USDT</a>
+                    <a href="usdt.html" class="footer__link">Покупка и продажа USDT</a>
                   </li>
                 </ul>
               </nav>
@@ -485,6 +502,7 @@
           </div>
         </div>
       </footer>
+      <!--  footer v 1.0 end -->
       <div id="popup" aria-hidden="true" class="popup popup-main">
         <div class="popup__wrapper">
           <div class="popup__content">

@@ -1,0 +1,150 @@
+.word {
+  &__container {
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 64px;
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 32px;
+    }
+  }
+
+  p {
+    line-height: 150%;
+    @media (max-width: $mobile) {
+      font-size: 14px;
+    }
+  }
+
+  &__item {
+    min-height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $light;
+    padding: 32px;
+    border-radius: 12px;
+    @media (max-width: $mobile) {
+      min-height: auto;
+      gap: 16px;
+      padding: 16px;
+    }
+  }
+
+  &__symbol {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    font-family: $regular;
+  }
+
+  &__body {
+    margin-bottom: 64px;
+    @media (max-width: $mobile) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+    @media (max-width: $mobile) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__row-item {
+    flex: 0 1 63%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $light;
+    padding: 32px;
+    border-radius: 12px;
+    @media (max-width: $tablet) {
+      flex: 0 1 50%;
+    }
+    @media (max-width: $mobile) {
+      gap: 24px;
+    }
+  }
+  &__row-image {
+    flex: 0 1 37%;
+    img {
+      width: 100%;
+    }
+    @media (max-width: $tablet) {
+      flex: 0 1 50%;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 32px;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: $mobile) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+    }
+  }
+
+  &__bigitem {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $light;
+    padding: 32px;
+    border-radius: 12px;
+    @media (max-width: 1200px) {
+      flex: 0 1 100%;
+    }
+    @media (max-width: $mobile) {
+      gap: 24px;
+    }
+  }
+
+  &__smallitem {
+    flex: 0 1 21%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $light;
+    padding: 32px;
+    border-radius: 12px;
+    @media (max-width: 1200px) {
+      flex: 0 1 calc(60% - 18px);
+    }
+    @media (max-width: $mobile) {
+      gap: 24px;
+    }
+  }
+
+  &__bottom-img {
+    flex: 0 1 29%;
+    img {
+      width: 100%;
+    }
+    @media (max-width: 1200px) {
+      flex: 0 1 calc(40% - 18px);
+    }
+  }
+}
+.service {
+  &__title {
+  }
+
+  &__subtitle {
+  }
+}
