@@ -1,14 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
   const selectElements = [
-    document.getElementById("currency-select1"),
-    document.getElementById("currency-select2"),
+    document.getElementById('currency-select1'),
+    document.getElementById('currency-select2'),
   ];
 
   // Функция для обновления изображения в опциях
   const addImagesToOptions = (selectElement) => {
-    const options = selectElement.querySelectorAll("option");
+    const options = selectElement.querySelectorAll('option');
     options.forEach((option) => {
-      const imgSrc = option.getAttribute("data-img-src");
+      const imgSrc = option.getAttribute('data-img-src');
       if (imgSrc) {
         option.innerHTML = `<img src="${imgSrc}" class="select-image" alt="${option.text}" /> ${option.text}`;
       }
@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Функция для обновления изображения выбранного элемента
   const updateSelectedImage = (selectElement) => {
     const selectedOption = selectElement.options[selectElement.selectedIndex];
-    const imageUrl = selectedOption.getAttribute("data-img-src");
+    const imageUrl = selectedOption.getAttribute('data-img-src');
     selectElement
-      .closest(".top-calculator__select-wrapper")
-      .style.setProperty("--image-url", `url(${imageUrl})`);
+      .closest('.top-calculator__select-wrapper')
+      .style.setProperty('--image-url', `url(${imageUrl})`);
   };
 
   // Функция для обновления изображений для опций Choices.js
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     choicesList.forEach((choice) => {
       const option = selectElement.querySelector(`option[value="${choice.value}"]`);
       if (option) {
-        choice.customProperties = { imgSrc: option.getAttribute("data-img-src") };
+        choice.customProperties = { imgSrc: option.getAttribute('data-img-src') };
       }
     });
   };
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const choices1 = new Choices(selectElement1, { searchEnabled: false });
   updateChoicesWithImages(selectElement1, choices1);
   updateSelectedImage(selectElement1);
-  selectElement1.addEventListener("change", () => updateSelectedImage(selectElement1));
+  selectElement1.addEventListener('change', () => updateSelectedImage(selectElement1));
 
   // Обработка второго select
   const selectElement2 = selectElements[1];
@@ -49,33 +49,34 @@ document.addEventListener("DOMContentLoaded", function () {
   const choices2 = new Choices(selectElement2, { searchEnabled: false });
   updateChoicesWithImages(selectElement2, choices2);
   updateSelectedImage(selectElement2);
-  selectElement2.addEventListener("change", () => updateSelectedImage(selectElement2));
+  selectElement2.addEventListener('change', () => updateSelectedImage(selectElement2));
 
   //calculator
 
   // Получаем элементы input
-  const inputOne = document.getElementById("input-1");
-  const inputTwo = document.getElementById("input-2");
+  const inputOne = document.getElementById('input-1');
+  const inputTwo = document.getElementById('input-2');
 
-  let indexSelect = "RUB-USD синий";
+  let indexSelect = 'RUB-USD синий';
   // Константа курса
   const exchangeMap = {
-    "RUB-USD синий": 93.3,
-    "RUB-USD белый": 93.3,
-    "RUB-USDT": 93.3,
-    "RUB-EUR": 103,
-    "EUR-RUB": 106.25,
-    "USD синий-RUB": 96.25,
-    "USD белый-RUB": 96.25,
-    "USDT-RUB": 96.25,
-    "USD синий-USDT": 1,
-    "USD белый-USDT": 1,
-    "USDT-USD белый": 1,
-    "USDT-USD синий": 1,
+    'RUB-USD синий': 93.3,
+    'RUB-USD белый': 93.3,
+
+    'RUB-EUR': 103,
+    'EUR-RUB': 106.25,
+    'USD синий-RUB': 96.25,
+    'USD белый-RUB': 96.25,
+
+    'RUB-GBP': 113.3,
+    'GBP-RUB': 116.25,
+
+    'RUB-CHF': 98.3,
+    'CHF-RUB': 104.25,
   };
 
   let exchangeRate = 93.3;
-  let currentOperation = "sell";
+  let currentOperation = 'sell';
 
   // Функция для обработки изменения значения в первом input
   function handleInputChange(event) {
@@ -84,12 +85,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     onChangeCurrentOperation();
 
-    console.log(indexSelect, "indexSelect");
+    console.log(indexSelect, 'indexSelect');
 
     // Проверяем, что введенное значение числовое и не NaN
 
     // Вычисляем новое значение для второго input по заданному курсу
-    if (currentOperation === "sell") {
+    if (currentOperation === 'sell') {
       const newValue = (inputValue * exchangeRate).toFixed(2); // округляем до двух знаков после запятой
       inputTwo.value = newValue; // Устанавливаем новое значение во втором input
       // formatNumberInput(inputValue, inputOne);
@@ -111,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Проверяем, что введенное значение числовое и не NaN
     if (!isNaN(inputValue)) {
       // Вычисляем новое значение для первого input по обратному курсу
-      if (currentOperation === "buy") {
+      if (currentOperation === 'buy') {
         const newValue = (inputValue / exchangeRate).toFixed(2); // округляем до двух знаков после запятой
         inputOne.value = newValue; // Устанавливаем новое значение в первом input
       } else {
@@ -120,42 +121,46 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     } else {
       // Если введено не числовое значение, можно выполнить другие действия или оставить поле пустым
-      inputOne.value = ""; // Очищаем первый input, если второй input не содержит числовое значение
+      inputOne.value = ''; // Очищаем первый input, если второй input не содержит числовое значение
     }
   }
 
   function onChangeCurrentOperation() {
     if (
-      indexSelect === "USD белый-RUB" ||
-      indexSelect === "USD синий-RUB" ||
-      indexSelect === "EUR-RUB" ||
-      indexSelect === "USDT-RUB"
+      indexSelect === 'USD белый-RUB' ||
+      indexSelect === 'USD синий-RUB' ||
+      indexSelect === 'EUR-RUB' ||
+      indexSelect === 'USDT-RUB' ||
+      indexSelect === 'GBP-RUB' ||
+      indexSelect === 'CHF-RUB'
     ) {
-      currentOperation = "sell";
+      currentOperation = 'sell';
     }
     if (
-      indexSelect === "RUB-USD белый" ||
-      indexSelect === "RUB-USD синий" ||
-      indexSelect === "RUB-USDT" ||
-      indexSelect === "RUB-EUR"
+      indexSelect === 'RUB-USD белый' ||
+      indexSelect === 'RUB-USD синий' ||
+      indexSelect === 'RUB-USDT' ||
+      indexSelect === 'RUB-EUR' ||
+      indexSelect === 'RUB-GBP' ||
+      indexSelect === 'RUB-CHF'
     ) {
-      currentOperation = "buy";
+      currentOperation = 'buy';
     }
   }
 
   // Привязываем обработчики событий к обоим input
-  inputOne.addEventListener("input", handleInputChange);
-  inputTwo.addEventListener("input", handleSecondInputChange);
+  inputOne.addEventListener('input', handleInputChange);
+  inputTwo.addEventListener('input', handleSecondInputChange);
 
-  const select1 = document.getElementById("currency-select1");
-  const select2 = document.getElementById("currency-select2");
+  const select1 = document.getElementById('currency-select1');
+  const select2 = document.getElementById('currency-select2');
 
   // Функция для обработки изменения выбранного option
   function handleSelectChange(event) {
-    const right = document.querySelector(".calculator-rates__right");
-    const left = document.querySelector(".calculator-rates__left");
-    const singleRight = right.querySelector(".choices__list--single");
-    const singleLeft = left.querySelector(".choices__list--single");
+    const right = document.querySelector('.calculator-rates__right');
+    const left = document.querySelector('.calculator-rates__left');
+    const singleRight = right.querySelector('.choices__list--single');
+    const singleLeft = left.querySelector('.choices__list--single');
 
     const selectedValue = event.target.value;
 
@@ -178,10 +183,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     onChangeCurrentOperation();
 
-    console.log("ok");
+    console.log('ok');
     console.log(currentOperation);
 
-    if (currentOperation === "sell") {
+    if (currentOperation === 'sell') {
       const newValue = (inputValueOne * exchangeRate).toFixed(2); // округляем до двух знаков после запятой
       inputTwo.value = newValue; // Устанавливаем новое значение во втором input
       // formatNumberInput(inputValue, inputOne);
@@ -233,18 +238,18 @@ document.addEventListener("DOMContentLoaded", function () {
   // }
 
   // Навешиваем обработчик события change на оба select
-  select1.addEventListener("change", handleSelectChange);
-  select2.addEventListener("change", handleSelectChange);
+  select1.addEventListener('change', handleSelectChange);
+  select2.addEventListener('change', handleSelectChange);
 
-  const reverseItem = document.querySelector(".calculator-rates__reverse");
+  const reverseItem = document.querySelector('.calculator-rates__reverse');
 
-  reverseItem.addEventListener("click", onReverse);
+  reverseItem.addEventListener('click', onReverse);
 
   function onReverse() {
-    const right = document.querySelector(".calculator-rates__right");
-    const left = document.querySelector(".calculator-rates__left");
-    const singleRight = right.querySelector(".choices__list--single");
-    const singleLeft = left.querySelector(".choices__list--single");
+    const right = document.querySelector('.calculator-rates__right');
+    const left = document.querySelector('.calculator-rates__left');
+    const singleRight = right.querySelector('.choices__list--single');
+    const singleLeft = left.querySelector('.choices__list--single');
 
     const SelectLeftValue = singleLeft.children[0].dataset.value;
     const SelectRightValue = singleRight.children[0].dataset.value;
@@ -265,10 +270,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function updateInput() {
-    const right = document.querySelector(".calculator-rates__right");
-    const left = document.querySelector(".calculator-rates__left");
-    const singleRight = right.querySelector(".choices__list--single");
-    const singleLeft = left.querySelector(".choices__list--single");
+    const right = document.querySelector('.calculator-rates__right');
+    const left = document.querySelector('.calculator-rates__left');
+    const singleRight = right.querySelector('.choices__list--single');
+    const singleLeft = left.querySelector('.choices__list--single');
 
     const valueSelectLeft = singleLeft.children[0].dataset.value;
     const valueSelectRight = singleRight.children[0].dataset.value;
@@ -283,7 +288,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const newValueTwo = (inputValueOne * exchangeRate).toFixed(2);
       inputTwo.value = newValueTwo;
     } else {
-      inputTwo.value = "";
+      inputTwo.value = '';
     }
 
     const event = {
@@ -307,20 +312,20 @@ document.addEventListener("DOMContentLoaded", function () {
   // }
 
   function removeNonNumeric(value, input) {
-    value = value + "";
-    const result = value.replace(/\D/g, "");
+    value = value + '';
+    const result = value.replace(/\D/g, '');
     input.value = result;
     return result;
   }
 
   function onChangeError(value) {
-    const elementError = document.querySelector(".calculator-rates__error");
+    const elementError = document.querySelector('.calculator-rates__error');
     if (value) {
-      elementError.classList.add("active");
-      inputOne.value = "";
-      inputTwo.value = "";
+      elementError.classList.add('active');
+      inputOne.value = '';
+      inputTwo.value = '';
     } else {
-      elementError.classList.remove("active");
+      elementError.classList.remove('active');
     }
   }
 });
