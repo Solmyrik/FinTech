@@ -1,103 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <title>FinTech</title>
-    <link rel="stylesheet" href="css/style2.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <!--  header v 1.0 -->
-      <header class="header">
-        <div class="header__container">
-          <div class="header__body">
-            <nav class="header__menu">
-              <ul class="header__list">
-                <li class="header__item">
-                  <a href="exchange.html" class="header__link">Обмен валют</a>
-                </li>
-                <li class="header__item">
-                  <a href="crypto.html" class="header__link">Криптовалюта</a>
-                </li>
-                <li class="header__item header__item_arrow">
-                  <a href="word.html" class="header__link">
-                    <span
-                      >Услуги
-                      <svg
-                        width="8"
-                        height="5"
-                        viewBox="0 0 8 5"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M7.21757 1.26257L4.03559 4.44455C3.84032 4.63981 3.52374 4.63981 3.32848 4.44455L0.146499 1.26257C-0.0487633 1.0673 -0.0487633 0.750721 0.146499 0.555458C0.341762 0.360196 0.658344 0.360196 0.853606 0.555458L3.68203 3.38389L6.51046 0.555458C6.70572 0.360196 7.0223 0.360196 7.21757 0.555458C7.41283 0.750721 7.41283 1.0673 7.21757 1.26257Z"
-                          fill="#1F2123"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                  <div class="menu__sub sub-menu">
-                    <div class="sub-menu__wrapper">
-                      <ul class="sub-menu__list">
-                        <li class="sub-menu__item">
-                          <a href="word.html" class="sub-menu__link"
-                            >Международные перестановки по всему миру</a
-                          >
-                        </li>
-                        <li class="sub-menu__item">
-                          <a href="invoice.html" class="sub-menu__link"
-                            >Оплата инвойс платежей/SWIFT</a
-                          >
-                        </li>
-                        <li class="sub-menu__item">
-                          <a href="usdt.html" class="sub-menu__link">Покупка и продажа USDT</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="header__item"><a href="news.html" class="header__link">Новости</a></li>
-                <li class="header__item">
-                  <a href="contacts.html" class="header__link">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="header__contacts">
-              <a href="tel:+79771048888" class="header__phone">+7 977 104 88 88</a>
-              <a data-popup="#popup" href="" class="header__button _btn">Перезвоните мне</a>
-              <div class="header__icons">
-                <a href="" class="header__icon"><img src="img/icons/tg.svg" alt="telegram" /></a>
-                <a href="" class="header__icon"><img src="img/icons/wa.svg" alt="WhatsApp" /></a>
-              </div>
-            </div>
-          </div>
-          <div class="header__burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="header__mobile-contact mobile-contact">
-            <a href="tel:+79771048888" class="mobile-contact__tel">+7 977 104 88 88</a>
-            <a href="" class="mobile-contact__link"
-              ><img src="img/icons/tg.svg" alt="telegram"
-            /></a>
-            <a href="" class="mobile-contact__link"
-              ><img src="img/icons/wa.svg" alt="WhatsApp"
-            /></a>
-          </div>
-        </div>
-      </header>
-      <!-- header v 1.0 end -->
+<?php
+/*
+Template Name: home
+*/
 
-      <main class="main">
+?>
+
+<?php get_header(); ?>
+
+<main class="main">
         <section class="intro-main _margin-b">
           <div class="intro-main__container">
             <div class="intro-main__logo">
-              <img src="img/logo.svg" alt="logo" />
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" alt="logo" />
             </div>
             <h1 class="intro-main__title">
               ПРЕДОСТАВИМ НАШИ УСЛУГИ ПРОФЕССИОНАЛЬНО, НАДЕЖНО И С ВЫГОДОЙ ДЛЯ КАЖДОГО КЛИЕНТА
@@ -213,7 +127,7 @@
                       <a href="#" class="level__link _btn">Подробнее</a>
                     </div>
                     <div class="level__icon">
-                      <img src="img/level/planet.png" alt="planet" />
+                      <img src="<?php bloginfo('template_url'); ?>/assets/img/level/planet.png" alt="planet" />
                     </div>
                   </article>
                   <article class="swiper-slide level__item level__item_green">
@@ -223,7 +137,7 @@
                       <a href="#" class="level__link _btn">Подробнее</a>
                     </div>
                     <div class="level__icon">
-                      <img src="img/level/list.png" alt="list" />
+                      <img src="<?php bloginfo('template_url'); ?>/assets/img/level/list.png" alt="list" />
                     </div>
                   </article>
                   <article class="swiper-slide level__item level__item_purple">
@@ -233,7 +147,7 @@
                       <a href="#" class="level__link _btn">Подробнее</a>
                     </div>
                     <div class="level__icon">
-                      <img src="img/level/usdt.png" alt="usdt" />
+                      <img src="<?php bloginfo('template_url'); ?>/assets/img/level/usdt.png" alt="usdt" />
                     </div>
                   </article>
                 </div>
@@ -248,7 +162,7 @@
             <div class="advantages__body">
               <div class="advantages__item">
                 <div class="advantages__icon">
-                  <img src="img/icons/support.svg" alt="support" />
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/support.svg" alt="support" />
                 </div>
                 <h3 class="advantages__name">Поддержка 24/7</h3>
                 <p class="advantages__text">
@@ -257,7 +171,7 @@
               </div>
               <div class="advantages__item">
                 <div class="advantages__icon">
-                  <img src="img/icons/handshake.svg" alt="handshake" />
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/handshake.svg" alt="handshake" />
                 </div>
                 <h3 class="advantages__name">Лучшее предложение</h3>
                 <p class="advantages__text">
@@ -267,7 +181,7 @@
               </div>
               <div class="advantages__item">
                 <div class="advantages__icon">
-                  <img src="img/icons/shield.svg" alt="shield" />
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/shield.svg" alt="shield" />
                 </div>
                 <h3 class="advantages__name">Надежный партнер</h3>
                 <p class="advantages__text">
@@ -277,7 +191,7 @@
               </div>
               <div class="advantages__item">
                 <div class="advantages__icon">
-                  <img src="img/icons/dollar.svg" alt="support" />
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/dollar.svg" alt="support" />
                 </div>
                 <h3 class="advantages__name">Выгодные ставки</h3>
                 <p class="advantages__text">
@@ -287,7 +201,7 @@
             </div>
             <div class="advantages__bottom">
               <div class="advantages__image">
-                <img src="img/phone.png" alt="phone" />
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/phone.png" alt="phone" />
               </div>
               <div class="advantages__content">
                 <h3 class="advantages__content-title">
@@ -298,7 +212,7 @@
                   валютно-финансовые новости, а также следить за курсами валют в кассах
                 </p>
                 <a href="" class="advantages__button">
-                  <img src="img/icons/telegram.svg" alt="telegram" />
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/telegram.svg" alt="telegram" />
                   <span>Перейти в канал</span>
                 </a>
               </div>
@@ -315,11 +229,11 @@
                 <div class="reviews__value">5.0</div>
                 <div class="reviews__left">
                   <div class="reviews__stars">
-                    <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                    <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                    <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                    <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                    <img src="img/icons/star.svg" alt="star" class="reviews__star" />
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
                   </div>
                   <p>102 отзыва</p>
                 </div>
@@ -327,17 +241,17 @@
               <div class="reviews__items">
                 <article class="reviews__item">
                   <div class="reviews__avatar">
-                    <img src="img/reviews.webp" alt="avatar" />
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/reviews.webp" alt="avatar" />
                   </div>
                   <div class="reviews__content">
                     <h6 class="reviews__name">Олег Данилов</h6>
                     <div class="reviews__stars-wrapper">
                       <div class="reviews__stars">
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
                       </div>
                       <p>30 мая</p>
                     </div>
@@ -346,17 +260,17 @@
                 </article>
                 <article class="reviews__item">
                   <div class="reviews__avatar">
-                    <img src="img/reviews.webp" alt="avatar" />
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/reviews.webp" alt="avatar" />
                   </div>
                   <div class="reviews__content">
                     <h6 class="reviews__name">Олег Данилов</h6>
                     <div class="reviews__stars-wrapper">
                       <div class="reviews__stars">
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
                       </div>
                       <p>30 мая</p>
                     </div>
@@ -365,17 +279,17 @@
                 </article>
                 <article class="reviews__item">
                   <div class="reviews__avatar">
-                    <img src="img/reviews.webp" alt="avatar" />
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/reviews.webp" alt="avatar" />
                   </div>
                   <div class="reviews__content">
                     <h6 class="reviews__name">Олег Данилов</h6>
                     <div class="reviews__stars-wrapper">
                       <div class="reviews__stars">
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
                       </div>
                       <p>30 мая</p>
                     </div>
@@ -384,17 +298,17 @@
                 </article>
                 <article class="reviews__item">
                   <div class="reviews__avatar">
-                    <img src="img/reviews.webp" alt="avatar" />
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/reviews.webp" alt="avatar" />
                   </div>
                   <div class="reviews__content">
                     <h6 class="reviews__name">Олег Данилов</h6>
                     <div class="reviews__stars-wrapper">
                       <div class="reviews__stars">
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
                       </div>
                       <p>30 мая</p>
                     </div>
@@ -403,17 +317,17 @@
                 </article>
                 <article class="reviews__item">
                   <div class="reviews__avatar">
-                    <img src="img/reviews.webp" alt="avatar" />
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/reviews.webp" alt="avatar" />
                   </div>
                   <div class="reviews__content">
                     <h6 class="reviews__name">Олег Данилов</h6>
                     <div class="reviews__stars-wrapper">
                       <div class="reviews__stars">
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
-                        <img src="img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/star.svg" alt="star" class="reviews__star" />
                       </div>
                       <p>30 мая</p>
                     </div>
@@ -434,7 +348,7 @@
             <div class="program__body">
               <article class="program__item">
                 <div class="program__icon">
-                  <img src="img/icons/person.svg" alt="person" />
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/person.svg" alt="person" />
                 </div>
                 <h3 class="program__name">Клиент от тебя</h3>
                 <p class="program__description">
@@ -444,7 +358,7 @@
               </article>
               <article class="program__item">
                 <div class="program__icon">
-                  <img src="img/icons/percent.svg" alt="percent" />
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/percent.svg" alt="percent" />
                 </div>
                 <h3 class="program__name">Наше предложение</h3>
                 <p class="program__description">
@@ -454,7 +368,7 @@
               </article>
               <article class="program__item">
                 <div class="program__icon">
-                  <img src="img/icons/bag-dollar.svg" alt="bag-dollar" />
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/bag-dollar.svg" alt="bag-dollar" />
                 </div>
                 <h3 class="program__name">Получение прибыли</h3>
                 <p class="program__description">
@@ -471,7 +385,7 @@
             <div class="news__body">
               <article class="news__item">
                 <div class="news__img">
-                  <img src="img/news/1.jpg" alt="news" />
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/news/1.jpg" alt="news" />
                 </div>
                 <div class="news__content">
                   <h3 class="news__name">
@@ -485,7 +399,7 @@
               </article>
               <article class="news__item">
                 <div class="news__img">
-                  <img src="img/news/2.jpg" alt="news" />
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/news/2.jpg" alt="news" />
                 </div>
                 <div class="news__content">
                   <h3 class="news__name">Китовый заплыв простимулировал взлет ChainLink</h3>
@@ -498,7 +412,7 @@
               </article>
               <article class="news__item">
                 <div class="news__img">
-                  <img src="img/news/3.jpg" alt="news" />
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/news/3.jpg" alt="news" />
                 </div>
                 <div class="news__content">
                   <h3 class="news__name">Капитализация стейблкоинов за полгода возросла на 25%</h3>
@@ -511,7 +425,7 @@
               </article>
               <article class="news__item">
                 <div class="news__img">
-                  <img src="img/news/4.jpg" alt="news" />
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/news/4.jpg" alt="news" />
                 </div>
                 <div class="news__content">
                   <h3 class="news__name">CryptoНеделя #135: факты, тренды, аналитика</h3>
@@ -524,7 +438,7 @@
               </article>
               <article class="news__item">
                 <div class="news__img">
-                  <img src="img/news/5.jpg" alt="news" />
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/news/5.jpg" alt="news" />
                 </div>
                 <div class="news__content">
                   <h3 class="news__name">
@@ -539,7 +453,7 @@
               </article>
               <article class="news__item">
                 <div class="news__img">
-                  <img src="img/news/6.jpg" alt="news" />
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/news/6.jpg" alt="news" />
                 </div>
                 <div class="news__content">
                   <h3 class="news__name">
@@ -557,98 +471,7 @@
         </section>
       </main>
 
-      <!--  footer v 1.0 -->
-      <footer class="footer">
-        <div class="footer__container">
-          <div class="footer__left">
-            <a href="index.html" class="footer__logo">
-              <img src="img/logo.svg" alt="logo" />
-            </a>
-            <div class="footer__left-column">
-              <div class="footer__row">
-                <h4 class="footer__name">Телефон</h4>
-                <a href="tel:+79771048888" class="footer__phone">+7 977 104 88 88</a>
-              </div>
-              <div class="footer__row">
-                <h4 class="footer__name">Email</h4>
-                <a href="mailto:fintechexchange@mail.ru" class="footer__phone"
-                  >fintechexchange@mail.ru</a
-                >
-              </div>
-              <div class="footer__icons">
-                <a href="" class="footer__icon"><img src="img/icons/tg.svg" alt="telegram" /></a>
-                <a href="" class="footer__icon"><img src="img/icons/wa.svg" alt="WhatsApp" /></a>
-              </div>
-            </div>
-          </div>
-          <div class="footer__right">
-            <div class="footer__column">
-              <h4 class="footer__name">ФинТех</h4>
-              <nav class="footer__menu">
-                <ul class="footer__list">
-                  <li class="footer__item">
-                    <a href="exchange.html" class="footer__link">Обмен валют</a>
-                  </li>
-                  <li class="footer__item">
-                    <a href="crypto.html" class="footer__link">Криптовалюта</a>
-                  </li>
-                  <li class="footer__item"><a href="news.html" class="footer__link">Новости</a></li>
-                  <li class="footer__item">
-                    <a href="contacts.html" class="footer__link">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer__column">
-              <h4 class="footer__name">Услуги</h4>
-              <nav class="footer__menu">
-                <ul class="footer__list">
-                  <li class="footer__item">
-                    <a href="word.html" class="footer__link"
-                      >Международные перестановки <br />
-                      по всему миру</a
-                    >
-                  </li>
-                  <li class="footer__item">
-                    <a href="invoice.html" class="footer__link">Оплата инвойс платежей/SWIFT</a>
-                  </li>
-                  <li class="footer__item">
-                    <a href="usdt.html" class="footer__link">Покупка и продажа USDT</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <a data-popup="#popup" class="footer__button _btn">Перезвоните мне</a>
-          </div>
-        </div>
-      </footer>
-      <!--  footer v 1.0 end -->
 
-      <div id="popup" aria-hidden="true" class="popup popup-main">
-        <div class="popup__wrapper">
-          <div class="popup__content">
-            <div class="popup__body popup__body_one">
-              <h2 class="popup__title _h2">Напишите нам</h2>
-              <div class="popup__icons">
-                <a href="" class="popup__icon popup__phone"
-                  ><img src="img/icons/phone.svg" alt="phone"
-                /></a>
-                <a href="" class="popup__icon"><img src="img/icons/tg.svg" alt="telegram" /></a>
-                <a href="" class="popup__icon"><img src="img/icons/wa.svg" alt="WhatsApp" /></a>
-              </div>
-            </div>
-            <div data-close class="popup-close popup__close">
-              <img src="img/icons/close.svg" alt="close" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/reviews.js"></script>
-    <script src="js/popup.js"></script>
-    <script src="js/coingecko.js"></script>
-  </body>
-</html>
+
+
+<?php get_footer(); ?>
