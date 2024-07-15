@@ -11,24 +11,24 @@
 }
 
 @font-face {
-  font-family: "Suisse-reg";
-  src: url("../fonts/SuisseIntl-Regular.woff2") format("woff2"), url("../fonts/SuisseIntl-Regular.woff") format("woff");
+  font-family: 'Suisse-reg';
+  src: url("../fonts/Suisse/SuisseIntl-Regular.woff2") format("woff2"), url("../fonts/Suisse/SuisseIntl-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Suisse-bold";
-  src: url("../fonts/SuisseIntl-SemiBold.woff2") format("woff2"), url("../fonts/SuisseIntl-SemiBold.woff") format("woff");
+  font-family: 'Suisse-bold';
+  src: url("../fonts/Suisse/SuisseIntl-SemiBold.woff2") format("woff2"), url("../fonts/Suisse/SuisseIntl-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Suisse-med";
-  src: url("../fonts/SuisseIntl-Medium.woff2") format("woff2"), url("../fonts/SuisseIntl-Medium.woff") format("woff");
+  font-family: 'Suisse-med';
+  src: url("../fonts/Suisse/SuisseIntl-Medium.woff2") format("woff2"), url("../fonts/Suisse/SuisseIntl-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -118,14 +118,14 @@
   margin-bottom: 64px;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 /* Убираем стрелочки в Firefox */
-input[type="number"] {
+input[type='number'] {
   -moz-appearance: textfield;
 }
 
