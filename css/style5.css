@@ -2879,6 +2879,10 @@ body.lock {
   }
 }
 
+.service .rates__calculator {
+  margin: 40px 0px;
+}
+
 @media (max-width: 767px) {
   .invoice {
     padding-top: 32px;
