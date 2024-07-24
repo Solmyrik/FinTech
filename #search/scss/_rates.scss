@@ -6,6 +6,11 @@
   }
   &__bottom {
   }
+  .service__text {
+    @media (max-width: $mobile) {
+      padding: 0px 15px;
+    }
+  }
   &__title {
     @media (max-width: $mobile) {
       padding: 0px 15px;
@@ -328,7 +333,7 @@
   height: 6px;
 }
 
-.choices[data-type*="select-one"] .choices__input {
+.choices[data-type*='select-one'] .choices__input {
   width: 150px !important;
   min-width: 150px;
   height: 50px;
@@ -373,6 +378,6 @@
   padding-left: 17px !important;
   white-space: nowrap;
 }
-.choices[data-type*="select-one"]::after {
+.choices[data-type*='select-one']::after {
   display: none;
 }

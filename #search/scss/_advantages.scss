@@ -6,11 +6,13 @@
   }
 
   &__body {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     gap: 64px;
     margin-bottom: 140px;
+    flex-wrap: wrap;
+    justify-content: center;
     @media (max-width: $tablet) {
+      display: grid;
       grid-template-columns: repeat(3, 1fr);
       margin-bottom: 100px;
     }
@@ -22,6 +24,8 @@
   }
 
   &__item {
+    flex: 0 1 calc(33% - 40px);
+    justify-self: center;
     @media (max-width: $mobile) {
       &:nth-child(2) {
         order: 1;
